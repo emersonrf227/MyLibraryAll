@@ -11,11 +11,15 @@ group='com.github.emersonrf227'
 android {
     compileSdkVersion 27
     defaultConfig {
+
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+
     }
     buildTypes {
         release {
@@ -24,7 +28,6 @@ android {
         }
     }
 }
-
 
 /*
 // Move o upldoad da biblioteca para o caminho a baixo
@@ -42,6 +45,8 @@ uploadArchives {
 }
 task install(dependsOn: uploadArchives)
 */
+
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

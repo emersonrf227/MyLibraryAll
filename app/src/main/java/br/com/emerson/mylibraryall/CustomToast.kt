@@ -13,8 +13,7 @@ class CustomToast() {
     fun showToast(context: Context, menssagem: String) {
 
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val customToastroot = inflater.inflate(R.custom_toast, null)
-
+        val customToastroot = inflater.inflate(R.layout.custom_toast, null);
         val customtoast = Toast(context)
 
         customtoast.view = customToastroot
@@ -27,6 +26,6 @@ class CustomToast() {
 
     }
 
-    
+
 
 }
